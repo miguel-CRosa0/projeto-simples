@@ -4,44 +4,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplos</title>
-    <link rel="stylesheet" href="./css/jogo.css">
+    <title>Unifev NEWS - Games</title>
 </head>
 
-<body style="background-color: #1a1a1a; font-family: monospace;">
-    <header>
-        <h1>Unifev News</h1>
-        <hr>
-        <nav>
-            <a href="index.html">Home</a><br><br>
-            <a href="#">Jogos</a>
-        </nav>
-    </header>
-    <hr>
-    <main>
-        <h1>Principais Noticias de Jogos</h1>
-        <ul class="galeria">
-            <li>
-                <h2>Silent hill F</h2>
-                <img src="./img/silenthillf.png" id="firstImg" alt="texto-imagem" style="width: 70%">
-            <li>
-        </ul>
-    </main>
-    <hr>
-    <footer>
-        <ul>
-            <li>
-                <p id="texto-final" style="color: rgb(198, 198, 198);">Silent Hill f (サイレントヒル f, Sairento Hiru f) é um
-                    jogo eletrônico de survival horror desenvolvido pela NeoBards Entertainment e publicado pela Konami
-                    Digital Entertainment. É um título derivado da série Silent Hill. Ambientado na década de 1960 na
-                    cidade fictícia de Ebisugaoka, no Japão, ele acompanha Hinako Shimizu, uma estudante do ensino médio
-                    que navega pela cidade, agora consumida pela neblina, enquanto resolve quebra-cabeças e luta contra
-                    monstros grotescos para sobreviver.</p>
-            </li>
-        </ul>
-    </footer>
+<body>
+    <style>
+        :root {
+            --miguelviado: black;
+            --dogaoviado: blue;
+            --dogaoJrviado: #D3AD4C;
+            --Nahyronviado: #520C14;
+            --diasViado: #E3F5D1;
+            --johnViado: white;
+            --cor1: #4A6F25;
+            --cor2: #70AB35;
+        }
 
-    <script src="./js/main.js" defer></script>
-</body>
+
+
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+
+        body {
+            background-color: var(--diasViado);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--miguelviado);
+        }
+
+        #lista a:hover {
+            color: var(--johnViado);
+            background-color: var(--dogaoviado);
+            transition: 0.4s;
+        }
+
+        .ReRequiem h2 {
+            color: var(--dogaoJrviado);
+        }
+
+        img {
+            width: 299px;
+            height: 168px;
+            max-width: 100%;
+        }
+
+        .ReRequiem {
+            width: 300px;
+        }
+
+        .turnAround {
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 1px;
+            background-color: var(--cor1);
+            gap: 8px;
+        }
+
+        #lista {
+            padding: 10px;
+        }
+
+        .ReRequiem {
+            border: 3px solid var(--cor2);
+            border-radius: 8px;
+            border-width: 10px;
+            padding: 30px;
+            background-color: white;
+        }
+
+
+        .Games {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            gap: 50px;
+        }
+
+        .ReRequiem h2 {
+            text-align: center;
+            padding: 6px;
+        }
+
+        #lista {
+            text-align: center;
+        }
+
+        #lista ul {
+            list-style: none;
+        }
+
+        .turnAround h1 {
+            color: var(--johnViado);
+        }
+
+        /* # = ID
+        . = CLASS */
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar {
+            background-color: gray;
+        }
+
+        .ReRequiem p {
+            gap: 30px;
+        }
+
+        .ReRequiem {
+            margin-top: 30px;
+
+            &:hover {
+                transition: 0.3s;
+                transform: scale(1.03);
+                box-shadow: 2px 2px 10px 2px #41631fa1;
+            }
+        }
+
+        #paragrafo {
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+    </style>
+
+    <body>
+        <header>
+            <div class="turnAround">
+                <h1>Unifev News</h1>
+                <p>Principais notícias dos Games em Votuporanga e região</p>
+                <div class="navbar">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="jogos.html">Games</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="Games">
+                <div class="ReRequiem">
+                    <a
+                        href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=newssearch&cd=&cad=rja&uact=8&ved=2ahUKEwjmnqmYsumSAxVOPbkGHT50AY8QxfQBKAB6BAgKEAE&url=https%3A%2F%2Fwww.adrenaline.com.br%2Fgames%2Ffinal-de-resident-evil-requiem-vaza-na-internet-e-capcom-promete-acoes-legais%2F&usg=AOvVaw2Xwfe6Ff1TjfPUiOnwrC6m&opi=89978449"><img
+                            src="image.png" alt=""></a>
+                    <h2>Vazamento de Resident Evil Requiem</h2>
+                    <div id="paragrafo">
+                        <p>Aparentemente, algumas pessoas tiveram acesso a cópias do jogo antes da hora e estão postando
+                            diversos trechos considerados spoilers. O problema ficou tão generalizado que agora a Capcom
+                            se
+                            pronunciou oficialmente sobre o assunto, tanto no perfil japonês de Resident Evil como em
+                            sua
+                            conta em inglês.</p>
+                    </div>
+                    <div id="paragrafo">
+                        <p>As duas mensagens pedem que a comunidade evite assistir a esse tipo de vídeo para não
+                            comprometer a própria experiência com o jogo. “Não falta muito para o jogo sair, e estamos
+                            ansiosos para ver suas reações depois do lançamento!”. Os dois textos informam também que o
+                            departamento legal da Capcom tem batalhado para remover os vídeos não autorizados da
+                            internet.</p>
+                    </div>
+                </div>
+            </div>
+    </body>
 
 </html>

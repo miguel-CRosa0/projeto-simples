@@ -4,59 +4,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplos</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <title>Unifev NEWS</title>
 </head>
+<style>
+    :root{
+        --miguelviado: black;
+        --dogaoviado: blue;
+        --dogaoJrviado: #D3AD4C;
+        --Nahyronviado: #520C14;
+        --diasViado: #E3F5D1;
+        --johnViado: white;
+        --cor1: #4A6F25;
+        --cor2: #70AB35;
+    }
 
-<body style="background-color: #6D9E51; font-family: monospace;">
+
+
+    * {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+    }
+
+    body {
+        background-color: var(--diasViado);
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--miguelviado);
+    }
+
+    #lista a:hover {
+        color: var(--johnViado);
+        background-color: var(--dogaoviado);
+        transition: 0.4s;
+    }
+
+    #block-1 h2 {
+        color: var(--dogaoJrviado);
+    }
+
+    img {
+        width: 299px;
+        height: 168px;
+        max-width: 100%;
+    }
+
+    #block-2 h2 {
+        color: var(--Nahyronviado);
+
+    }
+
+    #block-1,
+    #block-2 {
+        width: 300px;
+    }
+
+    .turnAround{
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 1px;
+        background-color: var(--cor1);
+        gap: 8px;
+    }
+
+    #lista{
+        padding: 10px;
+    }
+
+    #block-1{
+        border: 3px solid var(--cor2);
+        border-radius: 8px;
+        border-width: 10px;
+        padding: 30px;
+        background-color: white;
+    }
+    #block-2{
+        border: 3px solid var(--cor2);
+        border-radius: 8px;
+        border-width: 10px;
+        padding: 30px;
+        background-color: white;
+    }
+    #bodybuilder{
+        text-align: center;
+        padding: 1px;
+        margin-bottom: 10px;
+    }
+
+    .bloco{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 50px;
+    }
+
+    #block-2 h2{
+        text-align: center;
+        padding: 6px;
+    }
+    #block-1 h2{
+        text-align: center;
+        padding: 6px;
+    }
+
+    #lista{
+        text-align: center;
+    }
+
+    #lista ul{
+        list-style: none;
+    }
+
+    .turnAround h1{
+        color: var(--johnViado);
+    }
+
+    /* # = ID
+        . = CLASS */
+
+        .navbar ul li{
+            display: inline;
+        }
+
+        .navbar{
+            background-color: gray;
+        }
+</style>
+
+<body>
     <header>
+        <div class="turnAround">
         <h1>Unifev News</h1>
-        <hr>
-        <h2>principais noticias de Votuporanga e região</h2>
+        <p>Principais notícias de Votuporanga e região</p>
+        <div class="navbar">
         <nav>
-            <a href="#">Home</a><br><br>
-            <a href="jogos.html">Jogos</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="jogos.html">Games</a></li>
+            </ul>
         </nav>
+        </div>
+    </div>
+
+        <div id="lista">
+            <h2>Notícias do dia </h2>
+            <nav>
+                <ul>
+                    <li><a
+                            href="https://ge.globo.com/sp/tem-esporte/futebol/times/votuporanguense/noticia/2026/02/13/marcus-viola-e-anunciado-como-novo-tecnico-do-votuporanguense-para-a-a2.ghtml">Novo
+                            técnico da Votuporanguense</a></li>
+                    <li><a
+                            href="https://regiaonoroeste.com/moradora-de-votuporanga-morre-apos-oito-dias-internada-devido-a-acidente-de-moto/">Acidente
+                            de moto gera morte de moradora de Votuporanga</a></li>
+                    <li><a
+                            href="https://g1.globo.com/sp/sao-jose-do-rio-preto-aracatuba/noticia/2026/02/12/votuporanga-se-prepara-para-retorno-do-oba-festival-apos-pandemia-e-projeta-movimentacao-economica-de-r-70-milhoes.ghtml">Oba
+                            Festival volta a Votuporanga</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <hr>
-    <main>
-        <h1>Principais Noticias da semana</h1>
-        <ul class="galeria">
-            <li>
-                <h2>Placeholder</h2>
-                <img src="./img/placeholder.jpg" id="firstImg" alt="texto-imagem">
-                <p>Lorem, ipsum.</p>
-            <li>
-                <h2>Placeholder</h2>
-                <img src="./img/placeholder.jpg" alt="texto-imagem">
-                <p>Lorem, ipsum dolor.</p>
-            </li>
-            <li></li>
-        </ul>
-    </main>
-    <hr>
-    <footer>
-        <ul>
-            <li>
-                <p id="texto-final">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ea sed. Sed totam
-                    culpa laudantium
-                    cum hic
-                    odio possimus impedit enim, optio sequi placeat aliquid perspiciatis cumque illum dolor dolorum
-                    sapiente
-                    tempore sint voluptates quod, at architecto nisi. Illo non ipsa porro, similique perferendis modi
-                    quis
-                    dolorem sequi tenetur culpa odit voluptate quaerat temporibus maiores nisi deleniti eos natus
-                    expedita amet,
-                    alias aliquam nostrum? Aliquam expedita labore molestias optio soluta fugit odio unde vitae autem
-                    voluptatem
-                    id sapiente reiciendis suscipit, eius officia dolore esse nam, deserunt ipsa iste. Est sapiente
-                    corporis
-                    fuga natus numquam vitae? Sint quaerat quidem mollitia.</p>
-            </li>
-        </ul>
-    </footer>
+    <h2 id="bodybuilder">Principais notícias da semana</h2>
+    <div class="bloco">
+    <div id="block-1">
 
-    <script src="./js/main.js" defer></script>
+        <h2>Remake de God of War</h2>
+        <a href="https://meups.com.br/noticias/god-of-war-trilogy-remake-e-anunciado/"><img
+                src="https://meups.com.br/wp-content/uploads/2026/02/God-of-War-Trilogy-Remake-900x503.jpg"
+                alt="GodOfWar-Pic" title="God Of War"></a>
+
+        <p>God of War ganhará Remake da trilogia Grega. Data de lançamento não foi informada, é prevista que a trilogia
+            chegue entre o final de 2026 ou o começo de 2027</p>
+
+    </div>
+    <br>
+    <div id="block-2">
+
+        <h2>Novo trailer de Resident Evil Requiem</h2>
+        <a href="https://manualdosgames.com/resident-evil-requiem-pode-retorno-vilao-26/"><img src="ResidentEvil.jpg"
+                alt="Resident Evil Requiem" title="Resident Evil Requiem"></a>
+        <p>O quarto trailer de Resident Evil Requiem apresentado na State of Play trouxe algumas novidades sobre o
+            enredo do game, dando fim ao mistério a respeito da infecção de Leon e indica uma possível ligação de Grace
+            com os cientistas da Umbrella.</p>
+    </div>
+    </div>
 </body>
-
 </html>
